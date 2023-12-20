@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
 
-import { ButtonValue } from '$pad/constants'
 
 import { handlePad } from './handlePad'
 import { useWithdrawInput } from './useWithdrawInput'
+
+import { ButtonValue } from '$pad/constants'
 
 export const useKeyboardInput = () => {
   const { value, withdraw } = useWithdrawInput()

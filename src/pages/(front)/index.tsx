@@ -1,9 +1,10 @@
-import { Fragment } from 'react'
 import { Heading, VStack } from '@chakra-ui/react'
+import { Fragment } from 'react'
 
 import { Pad } from '$pad'
-import { PinInput } from '$auth/pinInput'
+
 import { handlePad } from '$auth/handlePad'
+import { PinInput } from '$auth/pinInput'
 
 const Page = () => {
   return (

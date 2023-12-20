@@ -1,15 +1,16 @@
-import { Fragment } from 'react'
 import { HStack, Heading, Spacer, VStack } from '@chakra-ui/react'
+import { Fragment } from 'react'
 
 import { Pad } from '$pad'
-import { Inventory } from '$user/inventory'
+
 import { Balance } from '$user/balance'
+import { ErrorDecoder } from '$user/errorDecoder'
 import { handlePad } from '$user/handlePad'
 import { Input } from '$user/input'
-import { WithdrawButton } from '$user/withdrawButton'
+import { Inventory } from '$user/inventory'
 import { Overdrawn } from '$user/overdrawn'
 import { useKeyboardInput } from '$user/useKeyboardInput'
-import { ErrorDecoder } from '$user/errorDecoder'
+import { WithdrawButton } from '$user/withdrawButton'
 
 const Page = () => {
   useKeyboardInput()

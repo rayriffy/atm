@@ -7,9 +7,5 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.CI === 'true' ? '' : undefined,
-  plugins: [
-    react(),
-    generouted(),
-    tsconfigPaths(),
-  ],
+  plugins: [react(), generouted(), tsconfigPaths()],
 })

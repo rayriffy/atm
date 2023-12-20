@@ -23,7 +23,7 @@
     "paths": {
       "$*": ["packlets/*"],
       "$router": ["router.ts"]
-    },
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,8 +1,10 @@
-import { useAuth } from '$auth/useAuth'
-import { Pad } from '$pad'
 import { Spinner, VStack } from '@chakra-ui/react'
 import { Fragment } from 'react'
 import { Outlet } from 'react-router-dom'
+
+import { Pad } from '$pad'
+
+import { useAuth } from '$auth/useAuth'
 
 const Page = () => {
   // global auth controller

@@ -5,9 +5,9 @@ import {
   Alert,
   AlertIcon,
 } from '@chakra-ui/react'
+import { Fragment } from 'react'
 
 import { usePinInput } from './usePinInput'
-import { Fragment } from 'react'
 
 export const PinInput = () => {
   const { pin, setPin, loading, error } = usePinInput()

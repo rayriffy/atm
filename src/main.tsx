@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom/client'
-import { Routes } from '@generouted/react-router'
-
 import { ChakraProvider, Container } from '@chakra-ui/react'
+import { Routes } from '@generouted/react-router'
+import ReactDOM from 'react-dom/client'
+
 import { theme } from '$chakra/constants'
 
 import '@fontsource-variable/noto-sans-thai'

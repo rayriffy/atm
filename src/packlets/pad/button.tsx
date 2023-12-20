@@ -2,6 +2,7 @@ import { Button, GridItem, GridItemProps, Heading } from '@chakra-ui/react'
 import { Icon } from 'react-iconify-icon-wrapper'
 
 import { ButtonValue } from './constants'
+
 import { usePadLockAtom } from '$context/padLockAtom'
 
 interface Props extends GridItemProps {

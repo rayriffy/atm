@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { pinAtom, usePinAtom } from '$context/pinAtom'
+import { APIPin } from './types'
+
 import { authenticatedAtom } from '$context/authenticatedAtom'
 import { balanceAtom } from '$context/balanceAtom'
 import { padLockAtom } from '$context/padLockAtom'
+import { pinAtom, usePinAtom } from '$context/pinAtom'
 
-import { APIPin } from './types'
 
 export const usePinInput = () => {
   const pin = usePinAtom()

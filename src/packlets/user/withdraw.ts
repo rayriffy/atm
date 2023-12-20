@@ -1,9 +1,10 @@
+import { calculateBanknote } from './calculateBanknote'
+
 import { Note } from '$bank/constants'
 import { balanceAtom } from '$context/balanceAtom'
 import { bankInventoryAtom } from '$context/bankInventoryAtom'
 import { userInventoryAtom } from '$context/userInventoryAtom'
 
-import { calculateBanknote } from './calculateBanknote'
 
 export const withdraw = async (requested: number) => {
   // get atom values

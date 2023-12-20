@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { useNavigate } from '$router'
+
 import { useAuthenticatedAtom } from '$context/authenticatedAtom'
 
 // global hook to handle authentication status of user
