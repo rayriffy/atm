@@ -31,7 +31,7 @@ export const PinInput = () => {
         </ChakraPinInput>
       </HStack>
       {error && (
-        <Alert status="error" variant='solid' rounded="md">
+        <Alert status="error" variant="solid" rounded="md">
           <AlertIcon />
           Pin is incorrect
         </Alert>

@@ -5,7 +5,6 @@ import { balanceAtom } from '$context/balanceAtom'
 import { bankInventoryAtom } from '$context/bankInventoryAtom'
 import { userInventoryAtom } from '$context/userInventoryAtom'
 
-
 export const withdraw = async (requested: number) => {
   // get atom values
   const balance = balanceAtom.get()

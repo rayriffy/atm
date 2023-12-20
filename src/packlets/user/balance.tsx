@@ -1,6 +1,6 @@
-import { Stat, StatLabel, StatNumber } from "@chakra-ui/react"
+import { Stat, StatLabel, StatNumber } from '@chakra-ui/react'
 
-import { useBalanceAtom } from "$context/balanceAtom"
+import { useBalanceAtom } from '$context/balanceAtom'
 
 export const Balance = () => {
   const balance = useBalanceAtom()

@@ -9,5 +9,5 @@ export enum ButtonValue {
   Eight = '8',
   Nine = '9',
   Zero = '0',
-  Del = 'DEL'
+  Del = 'DEL',
 }

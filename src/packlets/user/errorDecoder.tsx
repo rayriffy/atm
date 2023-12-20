@@ -1,7 +1,7 @@
-import { Alert, AlertIcon } from "@chakra-ui/react"
+import { Alert, AlertIcon } from '@chakra-ui/react'
 
-import { decodeError } from "./decodeError"
-import { useWithdrawInput } from "./useWithdrawInput"
+import { decodeError } from './decodeError'
+import { useWithdrawInput } from './useWithdrawInput'
 
 export const ErrorDecoder = () => {
   const { error } = useWithdrawInput()

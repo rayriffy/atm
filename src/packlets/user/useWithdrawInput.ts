@@ -8,7 +8,6 @@ import { ErrorCode } from '$bank/constants'
 import { padLockAtom } from '$context/padLockAtom'
 import { useWithdrawAtom, withdrawAtom } from '$context/withdrawAtom'
 
-
 const loadingAtom = atom(false)
 const errorAtom = atom<ErrorCode | null>(null)
 

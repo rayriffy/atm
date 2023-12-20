@@ -7,7 +7,6 @@ import { balanceAtom } from '$context/balanceAtom'
 import { padLockAtom } from '$context/padLockAtom'
 import { pinAtom, usePinAtom } from '$context/pinAtom'
 
-
 export const usePinInput = () => {
   const pin = usePinAtom()
 

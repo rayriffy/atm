@@ -1,5 +1,5 @@
-import { pinAtom } from "$context/pinAtom"
-import { ButtonValue } from "$pad/constants"
+import { pinAtom } from '$context/pinAtom'
+import { ButtonValue } from '$pad/constants'
 
 export const handlePad = (value: ButtonValue) => {
   const atomValue = pinAtom.get()
