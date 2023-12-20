@@ -6,6 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.CI === 'true' ? '' : undefined,
+  base: process.env.CI === 'true' ? '/atm' : undefined,
   plugins: [react(), generouted(), tsconfigPaths()],
 })
