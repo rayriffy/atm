@@ -16,7 +16,7 @@ export const useAuth = (section: 'auth' | 'app') => {
     // 1. in auth section and authenticated
     // 2. in app section and not authenticated
     if (authenticated === (section === 'auth'))
-      navigate(section === 'auth' ? '/app' : '/')
+      navigate(section === 'auth' ? '/atm/app' : '/atm')
 
     // app ready to render
     setReady(true)
