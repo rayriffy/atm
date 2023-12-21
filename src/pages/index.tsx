@@ -1,5 +1,6 @@
-import { useNavigate } from '$router'
 import { useEffect } from 'react'
+
+import { useNavigate } from '$router'
 
 const Page = () => {
   const navigate = useNavigate()

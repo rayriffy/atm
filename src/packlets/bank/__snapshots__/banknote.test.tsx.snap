@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Banknote /> > should match snapshot (note = 5) 1`] = `
+<div>
+  <div
+    class="css-prignq"
+  >
+    <p
+      class="chakra-text css-12bse91"
+    >
+      5
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Banknote /> > should match snapshot (note = 10) 1`] = `
+<div>
+  <div
+    class="css-prignq"
+  >
+    <p
+      class="chakra-text css-12bse91"
+    >
+      10
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Banknote /> > should match snapshot (note = 20) 1`] = `
+<div>
+  <div
+    class="css-prignq"
+  >
+    <p
+      class="chakra-text css-12bse91"
+    >
+      20
+    </p>
+  </div>
+</div>
+`;

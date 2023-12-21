@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Input /> > should render inventory 1`] = `
+<div>
+  <div
+    class="css-1j9zy8k"
+  >
+    <div
+      class="chakra-stack css-di81zt"
+    >
+      <div
+        class="css-prignq"
+      >
+        <p
+          class="chakra-text css-12bse91"
+        >
+          5
+        </p>
+      </div>
+      <p
+        class="chakra-text css-0"
+      >
+        0
+      </p>
+    </div>
+    <div
+      class="chakra-stack css-di81zt"
+    >
+      <div
+        class="css-prignq"
+      >
+        <p
+          class="chakra-text css-12bse91"
+        >
+          10
+        </p>
+      </div>
+      <p
+        class="chakra-text css-0"
+      >
+        0
+      </p>
+    </div>
+    <div
+      class="chakra-stack css-di81zt"
+    >
+      <div
+        class="css-prignq"
+      >
+        <p
+          class="chakra-text css-12bse91"
+        >
+          20
+        </p>
+      </div>
+      <p
+        class="chakra-text css-0"
+      >
+        0
+      </p>
+    </div>
+  </div>
+</div>
+`;

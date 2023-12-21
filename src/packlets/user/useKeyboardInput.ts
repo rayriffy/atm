@@ -54,7 +54,7 @@ export const useKeyboardInput = () => {
         handlePad(ButtonValue.Del)
         break
       case 'Enter':
-        withdraw()
+        if (value !== 0) withdraw()
         break
     }
   }

@@ -6,11 +6,11 @@ import { ButtonValue } from './constants'
 import { usePadLockAtom } from '$context/padLockAtom'
 
 interface Props extends GridItemProps {
-  onClick: () => void
+  onClick?: () => void
   value: ButtonValue
 }
 
-export const PinButton = ({ onClick, value, ...rest }: Props) => {
+export const PadButton = ({ onClick, value, ...rest }: Props) => {
   const lock = usePadLockAtom()
 
   return (

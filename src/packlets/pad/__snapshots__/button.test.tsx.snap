@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<PadButton /> > should match snapshot 1`] = `
+<div>
+  <div
+    class="css-199gl4c"
+  >
+    <button
+      class="chakra-button css-mw2l4i"
+      type="button"
+    >
+      <h2
+        class="chakra-heading css-0"
+      >
+        0
+      </h2>
+    </button>
+  </div>
+</div>
+`;

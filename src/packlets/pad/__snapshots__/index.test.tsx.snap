@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Pad /> > should match snapshot 1`] = `
+<div>
+  <div
+    class="chakra-stack chakra-container css-gfniwp"
+  >
+    <div
+      class="css-vw1wj9"
+    >
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+      <div>
+        PadButton
+      </div>
+    </div>
+  </div>
+</div>
+`;

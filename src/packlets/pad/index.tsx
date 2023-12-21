@@ -1,7 +1,7 @@
 import { Container, Grid, VStack } from '@chakra-ui/react'
 import { PropsWithChildren } from 'react'
 
-import { PinButton } from './button'
+import { PadButton } from './button'
 import { ButtonValue } from './constants'
 
 interface Props extends PropsWithChildren {
@@ -24,7 +24,7 @@ export const Pad = ({ onClick, children }: Props) => {
       {children}
       <Grid templateColumns="repeat(3, 1fr)" gap={6}>
         {Object.values(ButtonValue).map(o => (
-          <PinButton
+          <PadButton
             key={`pad-key-${o}`}
             value={o}
             colStart={o === ButtonValue.Zero ? 2 : undefined}

@@ -24,4 +24,11 @@ pnpm dev
 
 # Build production bundle
 pnpm build
+
+# Linting
+pnpm lint && pnpm format
+
+# To run unit testing
+pnpm test
+pnpm test --coverage // with code coverage
 ```

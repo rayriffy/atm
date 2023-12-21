@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Input /> > should render input 1`] = `
+<div>
+  <h2
+    class="chakra-heading css-120tsxn"
+  >
+    £
+    0
+  </h2>
+</div>
+`;

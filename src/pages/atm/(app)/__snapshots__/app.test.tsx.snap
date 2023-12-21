@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Page /> > should render page with all components 1`] = `
+<div>
+  <div
+    class="chakra-stack css-kmvjml"
+  >
+    <div
+      class="chakra-stack css-1igwmid"
+    >
+      <h2
+        class="chakra-heading css-0"
+      >
+        Withdraw
+      </h2>
+      <div
+        class="css-17xejub"
+      />
+      <div>
+        Balance
+      </div>
+    </div>
+    <div>
+      Input
+    </div>
+    <div>
+      ErrorDecoder
+    </div>
+  </div>
+  <div>
+    Pad
+    <div>
+      Inventory
+    </div>
+    <div
+      class="chakra-stack css-1igwmid"
+    >
+      <div>
+        Overdrawn
+      </div>
+      <div
+        class="css-17xejub"
+      />
+      <div>
+        WithdrawButton
+      </div>
+    </div>
+  </div>
+</div>
+`;

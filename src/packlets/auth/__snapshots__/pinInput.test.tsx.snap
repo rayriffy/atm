@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<PinInput /> > should render and match snapshot 1`] = `
+<div>
+  <div
+    class="chakra-stack css-48cong"
+  >
+    <input
+      aria-label="Please enter your pin code"
+      autocomplete="off"
+      class="chakra-pin-input css-0"
+      data-index="0"
+      id="pin-input-:r0:-0"
+      inputmode="numeric"
+      placeholder="○"
+      type="password"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autocomplete="off"
+      class="chakra-pin-input css-0"
+      data-index="1"
+      id="pin-input-:r0:-1"
+      inputmode="numeric"
+      placeholder="○"
+      type="password"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autocomplete="off"
+      class="chakra-pin-input css-0"
+      data-index="2"
+      id="pin-input-:r0:-2"
+      inputmode="numeric"
+      placeholder="○"
+      type="password"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autocomplete="off"
+      class="chakra-pin-input css-0"
+      data-index="3"
+      id="pin-input-:r0:-3"
+      inputmode="numeric"
+      placeholder="○"
+      type="password"
+      value=""
+    />
+  </div>
+</div>
+`;

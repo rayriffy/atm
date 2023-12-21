@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`decodeError > should render nothing if balance healty 1`] = `<div />`;
+
+exports[`decodeError > should render overdrawn badge if balance goes into minus 1`] = `
+<div>
+  <div
+    class="chakra-stack css-1so6s9z"
+  >
+    <iconify-icon
+      height="16"
+      icon="lucide:alert-triangle"
+      width="16"
+    />
+    <p
+      class="chakra-text css-nrviwf"
+    >
+      Account overdrawn
+    </p>
+  </div>
+</div>
+`;
