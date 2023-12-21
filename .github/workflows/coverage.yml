@@ -1,4 +1,4 @@
-name: Unit test
+name: Coverage
 
 on:
   push:
@@ -6,16 +6,12 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: test
+  group: coverage
   cancel-in-progress: false
 
 jobs:
-  test:
-    name: test-unit${{ matrix.node }}
+  coverage:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [1, 2]
     steps:
       - name: checkout
         uses: actions/checkout@v3
@@ -31,4 +27,10 @@ jobs:
       - name: install
         run: pnpm -r i --frozen-lockfile
       - name: test
-        run: pnpm test -- --shard=${{ matrix.node }}/2
+        run: pnpm test -- --coverage
+      - name: artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vitest-coverage
+          path: coverage/
