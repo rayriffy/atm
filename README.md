@@ -30,5 +30,5 @@ pnpm lint && pnpm format
 
 # To run unit testing
 pnpm test
-pnpm test --coverage // with code coverage
+pnpm test -- --coverage // with code coverage
 ```
