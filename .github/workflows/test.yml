@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  test:
+  coverage:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -27,10 +27,33 @@ jobs:
       - name: install
         run: pnpm -r i --frozen-lockfile
       - name: test
-        run: pnpm test --coverage
+        run: pnpm test -- --coverage
       - name: artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: vitest-coverage
           path: coverage/
+
+  test:
+    name: test-unit${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [1, 2]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: pnpm
+      - name: install
+        run: pnpm -r i --frozen-lockfile
+      - name: test
+        run: pnpm test -- --shard=${{ matrix.node }}/2
