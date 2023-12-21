@@ -13,6 +13,12 @@ Some genius has built an ATM, but forgot to add a way of getting money out of it
 └ /atm/app    Main application
 ```
 
+## Packlet concept
+
+tl;dr the way to organize code in not-too-strict way. good for fast prototyping
+
+[More info about this architecture](https://notes.dt.in.th/PackletsSetup)
+
 ## Development
 
 ```
