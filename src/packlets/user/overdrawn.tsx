@@ -6,7 +6,7 @@ import { useBalanceAtom } from '$context/balanceAtom'
 export const Overdrawn = () => {
   const balance = useBalanceAtom()
 
-  if (balance > 0) return null
+  if (balance >= 0) return null
 
   return (
     <HStack bg="orange.600" color="white" rounded="md" px={2.5} py={2}>
