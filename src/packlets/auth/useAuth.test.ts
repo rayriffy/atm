@@ -3,13 +3,12 @@ import { describe, it, vi, beforeEach, expect } from 'vitest'
 
 import { useAuth } from './useAuth'
 
-const { navigateSpy, useAuthenticatedAtomSpy } = vi.hoisted(() => ({
-  useAuthenticatedAtomSpy: vi.fn(),
-  navigateSpy: vi.fn(),
-}))
+const useAuthenticatedAtomSpy = vi.hoisted(() => vi.fn())
 vi.mock('$context/authenticatedAtom', () => ({
   useAuthenticatedAtom: useAuthenticatedAtomSpy,
 }))
+
+const navigateSpy = vi.hoisted(() => vi.fn())
 vi.mock('$router', () => ({
   useNavigate: vi.fn(() => navigateSpy),
 }))

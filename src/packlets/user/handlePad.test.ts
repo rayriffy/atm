@@ -4,40 +4,37 @@ import { handlePad } from './handlePad'
 
 import { ButtonValue } from '$pad/constants'
 
-const { getSpy, setSpy } = vi.hoisted(() => ({
-  getSpy: vi.fn(),
-  setSpy: vi.fn(),
+const withdrawAtomSpy = vi.hoisted(() => ({
+  get: vi.fn(),
+  set: vi.fn(),
 }))
 vi.mock('$context/withdrawAtom', () => ({
-  withdrawAtom: {
-    get: getSpy,
-    set: setSpy,
-  },
+  withdrawAtom: withdrawAtomSpy,
 }))
 
 describe('handlePad()', () => {
   beforeEach(() => {
-    getSpy.mockReturnValue('')
+    withdrawAtomSpy.get.mockReturnValue('')
     vi.clearAllMocks()
   })
 
   it('should attempt to add new character to withdrawAtom when called', () => {
     handlePad(ButtonValue.Zero)
 
-    expect(setSpy).toBeCalledTimes(1)
-    expect(setSpy).toHaveBeenCalledWith('0')
+    expect(withdrawAtomSpy.set).toBeCalledTimes(1)
+    expect(withdrawAtomSpy.set).toHaveBeenCalledWith('0')
   })
 
   it('should attmpt to delete a character when DEL is called', () => {
-    getSpy.mockReturnValue('ABCD12')
+    withdrawAtomSpy.get.mockReturnValue('ABCD12')
     handlePad(ButtonValue.Del)
 
-    expect(setSpy).toBeCalledTimes(1)
-    expect(setSpy).toHaveBeenCalledWith('ABCD1')
+    expect(withdrawAtomSpy.set).toBeCalledTimes(1)
+    expect(withdrawAtomSpy.set).toHaveBeenCalledWith('ABCD1')
 
-    getSpy.mockReturnValue('')
+    withdrawAtomSpy.get.mockReturnValue('')
     handlePad(ButtonValue.Del)
 
-    expect(setSpy).toHaveBeenCalledWith('')
+    expect(withdrawAtomSpy.set).toHaveBeenCalledWith('')
   })
 })

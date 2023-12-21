@@ -17,18 +17,14 @@ vi.mock('$context/pinAtom', () => ({
   },
 }))
 
-const { setAuthenticatedAtomSpy } = vi.hoisted(() => ({
-  setAuthenticatedAtomSpy: vi.fn(),
-}))
+const setAuthenticatedAtomSpy = vi.hoisted(() => vi.fn())
 vi.mock('$context/authenticatedAtom', () => ({
   authenticatedAtom: {
     set: setAuthenticatedAtomSpy,
   },
 }))
 
-const { setBalanceAtomSpy } = vi.hoisted(() => ({
-  setBalanceAtomSpy: vi.fn(),
-}))
+const setBalanceAtomSpy = vi.hoisted(() => vi.fn())
 vi.mock('$context/balanceAtom', () => ({
   balanceAtom: {
     set: setBalanceAtomSpy,

@@ -3,12 +3,11 @@ import { vi, describe, it, expect, beforeEach } from 'vitest'
 
 import { Input } from './input'
 
-const { useWithdrawInputSpy } = vi.hoisted(() => ({
-  useWithdrawInputSpy: vi.fn(() => ({
+const useWithdrawInputSpy = vi.hoisted(() =>
+  vi.fn(() => ({
     value: 0,
-  })),
-}))
-
+  }))
+)
 vi.mock('./useWithdrawInput', () => ({
   useWithdrawInput: useWithdrawInputSpy,
 }))

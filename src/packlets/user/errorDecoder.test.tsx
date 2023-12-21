@@ -5,18 +5,16 @@ import { ErrorDecoder } from './errorDecoder'
 
 import { ErrorCode } from '$bank/constants'
 
-
-const { useWithdrawInputSpy, decodeErrorSpy } = vi.hoisted(() => ({
-  useWithdrawInputSpy: vi.fn<unknown[], { error: ErrorCode | null }>(() => ({
-    error: null,
-  })),
-  decodeErrorSpy: vi.fn().mockReturnValue('mock-error'),
-}))
-
+const decodeErrorSpy = vi.hoisted(() => vi.fn().mockReturnValue('mock-error'))
 vi.mock('./decodeError', () => ({
   decodeError: decodeErrorSpy,
 }))
 
+const useWithdrawInputSpy = vi.hoisted(() =>
+  vi.fn<unknown[], { error: ErrorCode | null }>(() => ({
+    error: null,
+  }))
+)
 vi.mock('./useWithdrawInput', () => ({
   useWithdrawInput: useWithdrawInputSpy,
 }))

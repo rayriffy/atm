@@ -3,17 +3,15 @@ import { vi, describe, it, expect, beforeEach } from 'vitest'
 
 import { PinInput } from './pinInput'
 
-const { setPinSpy } = vi.hoisted(() => ({
-  setPinSpy: vi.fn(),
-}))
-const { usePinInputSpy } = vi.hoisted(() => ({
-  usePinInputSpy: vi.fn(() => ({
+const setPinSpy = vi.hoisted(() => vi.fn())
+const usePinInputSpy = vi.hoisted(() =>
+  vi.fn(() => ({
     pin: '',
     setPin: setPinSpy,
     loading: false,
     error: false,
-  })),
-}))
+  }))
+)
 vi.mock('./usePinInput', () => ({
   usePinInput: usePinInputSpy,
 }))

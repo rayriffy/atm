@@ -4,7 +4,6 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import Page from './app'
 
-
 const propsSpy = vi.fn()
 const {
   handlePadSpy,

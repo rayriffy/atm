@@ -3,10 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { Balance } from './balance'
 
-const { useBalanceAtomSpy } = vi.hoisted(() => ({
-  useBalanceAtomSpy: vi.fn(),
-}))
-
+const useBalanceAtomSpy = vi.hoisted(() => vi.fn())
 vi.mock('$context/balanceAtom', () => ({
   useBalanceAtom: useBalanceAtomSpy,
 }))

@@ -4,9 +4,7 @@ import { describe, it, vi, expect } from 'vitest'
 import { PadButton } from './button'
 import { ButtonValue } from './constants'
 
-const { usePadLockAtomSpy } = vi.hoisted(() => ({
-  usePadLockAtomSpy: vi.fn(),
-}))
+const usePadLockAtomSpy = vi.hoisted(() => vi.fn())
 vi.mock('$context/padLockAtom', () => ({
   usePadLockAtom: usePadLockAtomSpy,
 }))
