@@ -1,5 +1,5 @@
 import { ChakraProvider, Container } from '@chakra-ui/react'
-import { Routes } from '@generouted/react-router'
+import { Routes } from '@generouted/react-router/lazy'
 import ReactDOM from 'react-dom/client'
 
 import { theme } from '$chakra/constants'
